@@ -1,6 +1,6 @@
 const Database = require("better-sqlite3");
 
-const db = new Database("agent.db");
+const db = new Database("/app/data/agent.db");
 
 // Enable WAL mode for better concurrent read/write behavior
 db.pragma("journal_mode = WAL");
