@@ -1,4 +1,4 @@
-const AGENT_ID = "21a1f626-0b11-4f8e-be23-6053452e65b9";
+const AGENT_ID = "68f526a5-f7c1-468f-9394-7dc2b24388c4";
 
 async function loadFeed() {
 
@@ -13,9 +13,10 @@ async function loadFeed() {
 
     try {
 
-      const response = await fetch(
-    `/api/agent/feed?agentId=${AGENT_ID}`
+    const response = await fetch(
+    `https://autonomous-ai-agent-production-c53c.up.railway.app/api/agent/feed?agentId=${AGENT_ID}`
 );
+
 
         if (!response.ok) {
             throw new Error("Failed to load feed");
