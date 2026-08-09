@@ -13,9 +13,9 @@ async function loadFeed() {
 
     try {
 
-        const response = await fetch(
-            `http://localhost:3000/api/agent/feed?agentId=${AGENT_ID}`
-        );
+      const response = await fetch(
+    `/api/agent/feed?agentId=${AGENT_ID}`
+);
 
         if (!response.ok) {
             throw new Error("Failed to load feed");
